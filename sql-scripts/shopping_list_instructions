@@ -1,0 +1,34 @@
+This assignment consists of two parts:
+
+1. setting up new tables
+2. completing drills using knex.
+
+Firstly, add a SQL file called create.shopping-list.sql 
+in the knex-practice project's ./sql-scripts folder. 
+This file should contain the SQL to create a new 
+TYPE called grocery and a new TABLE called shopping_list. 
+The table will contain 6 columns and you will need to 
+decide which SQL data types to use for each column. 
+We'll supply you with a second SQL file that you will 
+use to seed the shopping_list table items.
+
+Note: You may see a warning in VSCode to install a missing 
+extension for mssql whenever you open a SQL file. 
+You can safely ignore this warning.
+
+The grocery TYPE should be an ENUM that can be one of the 
+following possible values:
+
+Main
+Snack
+Lunch
+Breakfast
+The shopping_list table should have the following 6 columns. 
+None of the columns should allow null values.
+
+A primary key column id
+A name column
+A price column that should not be a string and support 2 decimal places.
+A date_added column that should default to now().
+A checked column that should be a BOOLEAN with a default of false.
+A category column. Use the grocery type you created for this column.
